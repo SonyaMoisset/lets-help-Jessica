@@ -8,6 +8,9 @@ on:
 
 permissions:
   contents: read
+  actions: read
+  statuses: read
+  security-events: write
 
 jobs:
   snyk:
