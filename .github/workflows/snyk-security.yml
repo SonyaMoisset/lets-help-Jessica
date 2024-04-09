@@ -6,6 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - uses: actions/setup-node@v4
+      - run: npm install
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/node@master
         continue-on-error: true # To make sure that SARIF upload gets called
